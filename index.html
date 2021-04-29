@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-One</title>
+    <title>-One</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <!-- : Could you give the H1 Artsy title a bit of padding so it's not flush against the edge -->
+        <h1>Art</h1>
+        <nav class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="">Search History</a></li>
+                <li><a href="">Country of Origin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <!-- : Could you please use CSS to move the "Search Bar" down a bit? -->
+        <div class="col s1">
+            <div>
+                <!-- search bar -->
+                <!-- : Please change this section to make the Automated Search  -->
+                <input id="search">search</input>
+            </div>
+
+            <!-- instructions -->
+            <div>
+                <p>Instructions:</p>
+                <ul>
+                    <li>Type in an Artists Name.</li>
+                    <li>Click on the Artist in the dropdown.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col s11">
+            <div class="row">
+                <div class="col">
+                    <h3 id="artist-name" class="card-title">
+                        <!-- Artist Name -->
+                        Artist Name
+                    </h3>
+                </div>
+            </div>
+            <div class="row s12">
+                <div class="col s3">
+                    <div class="card">
+                        <div id="artist-description" class="card-content">
+                            <p>This is a place holder for the Artist Description. Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Similique odit quam, dolorem
+                                dignissimos at commodi dolores minus, voluptate corporis voluptas in exercitationem vel
+                                facilis est quas, fuga nihil adipisci optio.</p>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width">
+                                <!-- : With JQuery, could you use on-click for these tabs to change the classes and info displayed on lines 71-73 -->
+                                <li class="tab"><a href="#origin">Place of Origin</a></li>
+                                <li class="tab"><a class="active" href="#info">Artist Further Info</a></li>
+                                <li class="tab"><a href="#birthplace">Birthplace</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                            <div id="origin" style="display:block" class="active">Artworks place of origin</div>
+                            <div id="info" style="display:none" class>Extra info on Artist</div>
+                            <div id="birthplace" style="display:none" class>Birthplace facts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s9">
+                    <div class="carousel">
+                        <!-- Appended through JQuery -->
+                        <p>IMAGE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
