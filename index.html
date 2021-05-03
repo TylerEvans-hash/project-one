@@ -6,54 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artsy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <link rel="stylesheet" href="./assets/styles/stylesheet.css" />
 </head>
 
 <body>
-    <!-- added a container feel free to remove for a more full browser window feel TG -->
-    <!--<div class="container">-->
-
-    <!-- put the header and the nav bar in their own 'row' TG -->
     <header class="row">
-        <!-- gave h1 a class in the style sheet with a margin TG -->
         <h1 class="artsy">Artsy</h1>
         <nav class="nav-wrapper">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="">Home</a></li>
-                <li><a href="">Search History</a></li>
-                <li><a href="">Country of Origin</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="origin.html">Country of Origin</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="row">
+    <div class="row center-margin">
         <div class="col s2">
-            <!-- added a search bar class and added a top margin TG -->
             <div>
-                <div class="searchbar">
-                    <!-- search bar -->
-                    <!-- Meshal: Please change this section to make the Automated Search  -->
-                    <textarea>search</textarea>
-                </div>
+                <input id="search" value="Search"></input>
             </div>
 
+            <!-- instructions -->
             <div>
                 <p>Instructions:</p>
                 <ul>
-                    <li>Type in an Artists Name to view their work</li>
-                    <li>Click on the Artist in the dropdown.</li>
+                    <li>- Type in an Artists Name.</li>
+                    <li>- Click on the Artist in the dropdown.</li>
                 </ul>
             </div>
         </div>
 
-        <div id="card-holder" class="col s10">
-            <!-- Javascript appends to page -->
+        <!-- this div is for space -->
+        <div class="col s1"></div>
+
+        <div id="card-holder" class="col s9">
+            
         </div>
     </div>
-    <!--</div>-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
