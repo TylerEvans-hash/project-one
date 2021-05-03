@@ -1,7 +1,5 @@
 let origin = document.getElementById("origin")
 
-
-
 bulidHTML()
 function bulidHTML() {
     let data = JSON.parse(localStorage.getItem('origins')) || [];
