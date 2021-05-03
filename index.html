@@ -16,13 +16,12 @@
         <nav class="nav-wrapper">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="">Search History</a></li> -->
                 <li><a href="origin.html">Country of Origin</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="row">
+    <div class="row center-margin">
         <div class="col s2">
             <div>
                 <input id="search" value="Search"></input>
@@ -32,55 +31,22 @@
             <div>
                 <p>Instructions:</p>
                 <ul>
-                    <li>Type in an Artists Name.</li>
-                    <li>Click on the Artist in the dropdown.</li>
+                    <li>- Type in an Artists Name.</li>
+                    <li>- Click on the Artist in the dropdown.</li>
                 </ul>
             </div>
         </div>
 
-        <div class="col s10">
-            <div class="row">
-                <div class="col">
-                    <h3 id="artist-name" class="card-title">
-                        Artist Name
-                    </h3>
-                </div>
-            </div>
-            <div class="row s12">
-                <div class="col s3">
-                    <div class="card">
-                        <div id="artist-description" class="card-content">
-                            <p>This is a place holder for the Artist Description. Lorem ipsum dolor sit amet
-                                consectetur, adipisicing elit. Similique odit quam, dolorem
-                                dignissimos at commodi dolores minus, voluptate corporis voluptas in exercitationem vel
-                                facilis est quas, fuga nihil adipisci optio.</p>
-                        </div>
-                        <div class="card-tabs">
-                            <ul class="tabs tabs-fixed-width">
-                                <!-- : With JQuery, could you use on-click for these tabs to change the classes and info displayed on lines 71-73 -->
-                                <li class="tab"><a href="#origin">Place of Origin</a></li>
-                                <li class="tab"><a class="active" href="#info">Artist Further Info</a></li>
-                                <li class="tab"><a href="#birthplace">Birthplace</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-content grey lighten-4">
-                            <div id="origin" style="display:block" class="active">Artworks place of origin</div>
-                            <div id="info" style="display:none" class>Extra info on Artist</div>
-                            <div id="birthplace" style="display:none" class>Birthplace facts</div>
-                        </div>
-                    </div>
-                </div>
+        <!-- this div is for space -->
+        <div class="col s1"></div>
 
-                <div class="col s9">
-                    <div class="carousel">
-
-                    </div>
-                </div>
-            </div>
+        <div id="card-holder" class="col s9">
+            
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
     <script src="script.js"></script>
 </body>
 

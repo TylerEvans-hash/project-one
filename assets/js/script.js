@@ -54,11 +54,8 @@ var loadArtistCard = function () {
     cardDiv.append(tabContentDiv);
 
     // Appends images to Artist Card Row
-    var imageDiv = $("<div>").addClass("col s6");
-    // Meshal: This needs to be changed to add the images of the Pieces of Art
-    var image = $("<p>").text("Image Place Holder");
+    var imageDiv = $("<div>").attr("id", "images").addClass("col s6");
     cardRow.append(imageDiv);
-    imageDiv.append(image);
 
     // Appends Artist Card to page
     $("#card-holder").append(artistCardRow);
