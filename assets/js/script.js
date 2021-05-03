@@ -7,6 +7,7 @@ var loadArtistCard = function () {
     // Adds Row for Name
     var nameRow = $("<div>").addClass("row");
     var nameCol = $("<div>").addClass("col");
+
     var nameH = $("<h3>").attr("id", "artist-name").addClass("card-title")
     artistCardRow.append(nameRow);
     nameRow.append(nameCol);
@@ -22,6 +23,7 @@ var loadArtistCard = function () {
 
     // Adds Artist Description to Artist Card
     var artistDescription = $("<div>").attr("id", "artist-description").addClass("card-content");
+
     var descriptionP = $("<p>")
     cardDiv.append(artistDescription);
     artistDescription.append(descriptionP);
