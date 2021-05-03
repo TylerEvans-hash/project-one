@@ -1,22 +1,17 @@
 
+
+
+
 let IdSreach = document.getElementById("search")
 let carousel = document.querySelector(".carousel")
 let name = document.getElementById("artist-name")
 let wikiSite = document.getElementById("artist-description")
 
-// orgin
-
 let origins = []
-
-// id="artist-description"
-// artist-name
 function APIscreach(name) {
 
     return fetch('https://api.artic.edu/api/v1/artworks/search?q=' + name)
         .then(response => response.json())
-
-
-    // https://api.artic.edu/api/v1/artworks/13506?fields=id,title,image_id
 }
 
 function countries(url) {
@@ -31,26 +26,11 @@ function getImageId(id) {
 
     return fetch('https://api.artic.edu/api/v1/artworks/' + id + '?fields=id,title,image_id')
         .then(response => response.json())
-
-    //https://api.artic.edu/api/v1/artworks/13506?fields=id,title,image_id
-
-
-    // https://api.artic.edu/api/v1/artworks/13506?fields=id,title,image_id
 }
-Usersreach()
-function Usersreach() {
 
-    // const DIV = `<ol>
-    //     <li></li>
-    // </ol>`;
-    // const OL = document.createElement('ol');
-    // OL.setAttribute('id', 'list');
-    // const li = document.createElement('li');
-    // OL.appendChild(li);
-    // const H1 = document.createElement('h1');
-    // H1.textContent = ' m'
-    //Mary Cassatt
-    //https://api.artic.edu/api/v1/artworks/13506?fields=id,title,image_id
+Usersreach()
+
+function Usersreach() {
     IdSreach.addEventListener('change', (event) => {
         const result = event.target.value;
         let wik = getwikiInfo(result)
@@ -60,20 +40,8 @@ function Usersreach() {
             console.log(res)
 
             name.innerHTML = ` ${result}`
-            // const test = () => 'hello ';
-            // test();
             res.data.forEach(element => {
-                // const car = {
-                //     color: 'red',
-                //     cc: 1600,
-                // data: {
-                //     brand: 'toyota'
-                // }
-                // };
-                // const {color} = car
-                // const {data} = car
-                //color >> red
-                countries(element.api_link).then(({ data }) =>{
+                countries(element.api_link).then(({ data }) => {
                     origins.push(data.place_of_origin)
                     localStorage.setItem('origins', JSON.stringify(origins))
                 })
@@ -105,11 +73,6 @@ function Usersreach() {
                 getText(extractedText);
             }
         });
-
-        // var siteLink = "https://en.wikipedia.org/wiki/" + name;    
-        // wikiSite.setAttribute("href", siteLink);
-        // wikiSite.innerHTML = siteLink;
-
     }
     function getText(text) {
         wikiSite.firstElementChild.textContent = text;
