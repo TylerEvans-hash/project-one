@@ -5,47 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-One</title>
+    <title>Artsy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/styles/stylesheet.css" />
 </head>
 
 <body>
-    <header>
-        <!-- : Could you give the H1 Artsy title a bit of padding so it's not flush against the edge -->
-        <h1>Art</h1>
+    <header class="row">
+        <h1 class="artsy">Artsy</h1>
         <nav class="nav-wrapper">
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Search History</a></li>
                 <li><a href="origin.html">Country of Origin</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="row">
+    <div class="row center-margin">
         <table>
-
             <thead>
-
                 <th>
                     <p>Country</p>
-
                 </th>
                 <th>
-
-                    <p> count of country</p>
+                    <p>Amount of Artists</p>
                 </th>
-
             </thead>
-<tbody id="orgin">
-    <tr></tr>
 
-</tbody>
+            <tbody id="origin">
+                <tr></tr>
+
+            </tbody>
         </table>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="origin.js"></script>
+    <script src="./assets/js/origin.js"></script>
 
 </body>
 

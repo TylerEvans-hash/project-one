@@ -1,6 +1,4 @@
-let orgin = document.getElementById("orgin")
-
-
+let origin = document.getElementById("origin")
 
 bulidHTML()
 function bulidHTML() {
@@ -23,7 +21,7 @@ function bulidHTML() {
 
     const objKeys = Object.keys(countries)
     objKeys.forEach(countryName => {
-        orgin.innerHTML += `<tr>
+        origin.innerHTML += `<tr>
           <td>${countryName}</td>
           <td>${countries[countryName]}</td>
       </tr>`;
