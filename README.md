@@ -36,8 +36,8 @@ https://tylerevans-hash.github.io/project-one/
 - CSS
 - JavaScript
 - JQuery
-- Materialize
-- Art Insitute of Chicago API
+- Materialize (https://materializecss.com/getting-started.html)
+- Art Insitute of Chicago API (https://api.artic.edu/docs/#quick-start)
 
 ## Contributors:
 - Tyler Evans
